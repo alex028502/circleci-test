@@ -1,0 +1,11 @@
+machine:
+  python:
+    version: 2.7.3
+  services:
+    - docker
+dependencies:
+  pre:
+    - make start
+test:
+  post:
+    - make test
