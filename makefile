@@ -1,6 +1,6 @@
 try-at-home: start test stop
 start:
-	docker-compose up -d
+	docker-compose up -d --build
 stop:
 	docker-compose down
 test: virtualenv
